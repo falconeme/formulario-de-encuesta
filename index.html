@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Encuesta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="contenedor">
+        <h1 id="title">Formulario de Encuesta</h1>
+        <p id="description">Por favor, complete el siguiente formulario para ayudarnos a mejorar.</p>
+
+        <form id="survey-form">
+            <div class="datos">
+                <label for="name" id="name-label">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Ingrese su nombre" required>
+
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+
+                <label for="number" id="number-label">Edad:</label>
+                <input type="number" id="number" name="number" min="1" max="120" required>
+            </div>
+
+            <div class="preferencias">
+                <label for="dropdown">¿Qué preferís?</label>
+                <select name="dropdown" id="dropdown" required>
+                    <option value="">(Seleccione una opción)</option>
+                    <option value="opcion1">Perros</option>
+                    <option value="opcion2">Gatos</option> 
+                </select>
+            </div>
+
+            <div class="genero">
+                <p>Seleccione un género:</p>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Masculino</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Femenino</label>
+            </div>
+
+            <div class="intereses">
+                <p>Seleccione sus intereses:</p>
+                <input type="checkbox" id="interes1" name="interest" value="coding">
+                <label for="interes1">Programación</label>
+                <input type="checkbox" id="interes2" name="interest" value="music">
+                <label for="interes2">Música</label>
+                <input type="checkbox" id="interes3" name="interest" value="deportes">
+                <label for="interes3">Deportes</label>
+                <input type="checkbox" id="interes4" name="interest" value="leer">
+                <label for="interes4">Leer</label>
+            </div>
+
+            <label for="comments">Comentarios adicionales:</label>
+            <textarea name="comments" id="comments" placeholder="Escriba sus comentarios aquí"></textarea>
+
+            <div class="submit">
+                <button id="submit" type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Arial;
+    background-color: #048;
+    color: #fff;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 500px;
+    background-color: #023;
+    margin: 50px auto;
+    box-shadow: 0 0 20px #000000a3;
+    padding: 20px;
+}
+
+.datos label {
+    display: block;
+    margin-top: 10px;
+}
+
+#name, #email {
+    width: 100%;
+    max-width: 250px;
+}
+
+.preferencias label {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+#comments {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+.submit {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    max-width: 150px;
+    background-color: #ccc;
+}
+
+button:hover {
+    background-color: #aaa;
+}
